@@ -1,6 +1,7 @@
 class EntriesController < ApplicationController
 
-  def entries
+  def index
+    render :index
   end
-  
+
 end
