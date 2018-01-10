@@ -16,4 +16,8 @@ class EntriesController < ApplicationController
     redirect_to entries_url
   end
 
+  def edit
+    render :edit
+  end
+
 end
