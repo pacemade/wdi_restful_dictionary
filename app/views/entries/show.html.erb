@@ -1,3 +1,5 @@
 <h1><%= @entry.word.titleize %></h1>
 <p>Definition: <%= @entry.definition.capitalize %></p> <br>
 <h4>Language: <%= @entry.language.upcase %></h4> <br>
+
+<%= link_to "Edit Me!", edit_entry_path(@entry) %>

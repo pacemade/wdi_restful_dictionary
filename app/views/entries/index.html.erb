@@ -1,5 +1,7 @@
 <h1>This is the entries index page</h1>
 
+<h2><%= link_to "A new word?", new_entry_path(@entry) %></h2>
+
   <% @entries.each do |entry| %>
     <h2><%= link_to entry.word.capitalize, entry_path(entry) %></h2> <br>
   <% end %>
