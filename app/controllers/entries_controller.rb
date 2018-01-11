@@ -1,11 +1,11 @@
 class EntriesController < ApplicationController
 
   def index
-    render :index
+    @entries = Entry.all
   end
 
   def show
-    render :show
+    @entry = Entry.find(params[:id])
   end
 
   def new
@@ -22,6 +22,10 @@ class EntriesController < ApplicationController
 
   def update
     redirect_to entry_url(params[:id])
+  end
+
+  def destroy
+    redirect_to entry_url
   end
 
 end
