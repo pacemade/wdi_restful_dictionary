@@ -3,3 +3,5 @@
 <h4>Language: <%= @entry.language.upcase %></h4> <br>
 
 <%= link_to "Edit Me!", edit_entry_path(@entry) %>
+<%= link_to "Delete Me!", entry_path(@entry), method: :delete, data: {confirm: "Are you sure you want to delete the word '#{@entry.word}'? This cannot be undone!"} %>
+<%= link_to "Gimme the list", entries_path %>
