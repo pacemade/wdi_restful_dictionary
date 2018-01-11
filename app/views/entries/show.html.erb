@@ -1,1 +1,3 @@
-<p>This page will display information about entry number <%= params[:id] %></p>
+<h1><%= @entry.word.titleize %></h1>
+<p>Definition: <%= @entry.definition.capitalize %></p> <br>
+<h4>Language: <%= @entry.language.upcase %></h4> <br>

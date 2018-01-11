@@ -2,6 +2,4 @@
 
   <% @entries.each do |entry| %>
     <h2><%= link_to entry.word.capitalize, entry_path(entry) %></h2> <br>
-    <p>Definition: <%= entry.definition %></p> <br>
-    <h4><%= entry.language.upcase %></h4> <br>
   <% end %>
